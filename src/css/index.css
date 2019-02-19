@@ -24,6 +24,7 @@ header {
     display: flex;
     align-items: center;
     background: white;
+    margin-bottom: 10px;
 }
 
 header div {
@@ -44,4 +45,73 @@ header div p {
 header div p.active {
     border-bottom: 2px solid #617ef6;
     color: #617ef6;
+}
+
+section {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+section .content {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+section .content .top {
+    border-radius: 10px;
+    display: flex;
+    width: 100%;
+    height: 66px;
+    color: white;
+    padding: 10px 10px 10px 20px;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+section .content .top .price {
+    display: flex;
+    align-items: flex-start;
+    font-size: 45px;
+}
+
+section .content .top .price span {
+    font-size: 22px;
+    margin-right: 19px;
+}
+
+section .content .top .quan {
+    display: flex;
+    align-items: flex-end;
+    font-size: 26px;
+}
+
+section .content .bottom {
+    display: flex;
+    width: 100%;
+    height: 54px;
+    flex-direction: column;
+    background: white;
+    color: #c6c6c6;
+    padding: 9px 10px 8px 24px;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+section .content .bottom p:nth-child(1) {
+    margin-bottom: 10px;
+}
+
+section .content .bottom p.bg {
+    color: #00a864;
 }
